@@ -1,0 +1,23 @@
+body {
+    background:green;
+}
+.card {
+    height: 30rem;
+}
+.symbol {
+    font-size: 3rem;
+}
+.hearts{
+    content: "♥";
+    color: red;
+}
+.diamonds{
+    content: "♦";
+    color: red;
+}
+.spades{
+    content: "♠";
+}
+.clubs{
+    content: "♣";
+}
