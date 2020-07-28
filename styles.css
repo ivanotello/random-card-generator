@@ -2,22 +2,29 @@ body {
     background:green;
 }
 .card {
-    height: 30rem;
+    height: 35rem;
 }
 .symbol {
-    font-size: 3rem;
+    font-size: 6rem;
 }
 .hearts{
-    content: "♥";
+    /* content: 'AAAAA'; */
     color: red;
+    font-size: 6rem;
 }
 .diamonds{
-    content: "♦";
+    /* content: "♦"; */
     color: red;
+    font-size: 6rem;
 }
 .spades{
-    content: "♠";
+    /* content: "♠"; */
+    font-size: 6rem;
 }
 .clubs{
-    content: "♣";
+    /* content: "♣"; */
+    font-size: 6rem;
+}
+.number{
+    font-size: 7rem
 }

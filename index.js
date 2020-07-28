@@ -9,8 +9,35 @@ window.onload = () => {
         let randomIndexS = Math.floor(Math.random()*symbol.length);
         return symbol[randomIndexS];
     };
-
     
     document.querySelector('.number').innerHTML = randomNumber();
-    document.querySelector('.symbol').classList.add(randomSymbol());
+    var addStyleOne = document.getElementById("firstSymbol");
+    var addStyleTwo = document.getElementById("secondSymbol");
+    var chosenSymbol = randomSymbol();
+
+    if (chosenSymbol=="hearts"){
+        addStyleOne.innerHTML= "♥";
+        addStyleTwo.innerHTML="♥";
+    } else if (chosenSymbol=="diamonds"){
+        addStyleOne.innerHTML='♦';
+        addStyleTwo.innerHTML='♦';
+    } else if (chosenSymbol=="spades"){
+        addStyleOne.innerHTML='♠';
+        addStyleTwo.innerHTML='♠';
+    } else if (chosenSymbol=="clubs"){
+        addStyleOne.innerHTML='♣';
+        addStyleTwo.innerHTML='♣';
+    };
+
+        if (chosenSymbol=="hearts"){
+        addStyleOne.style.color = "red";
+        addStyleTwo.style.color= "red";
+    } else if (chosenSymbol=="diamonds"){
+        addStyleOne.style.color='red';
+        addStyleTwo.style.color='red';
+    };
+    
+
+    addStyleOne.classList.add(chosenSymbol);
+    addStyleTwo.classList.add(chosenSymbol);
 };
